@@ -13,25 +13,12 @@ class MyThread implements Runnable{
 }
 }
 
-class midThread extends Thread{
-	@Override
-	public void run(){
-		for(int i=0;i<5;i++){
-			System.out.println("Hello");
-			try{
-				Thread.sleep(500);
-			}
-			catch(Exception e){
 
-			}
-		}
-	}
-}
 
 class MyThread1 extends Thread{
 	@Override
 	public void run(){
-		for(int i=0;i<5;i++){
+		for(int i=1;i<=6;i++){
 			System.out.println("File is Loading");
 			try{
 				Thread.sleep(2000);
@@ -52,10 +39,10 @@ public class Threads{
 
 
 	 	MyThread1 thread1=new MyThread1();
-	 	midThread md1=new midThread();
+	 	//midThread md1=new midThread();
 	 	thread1.start();
 	 	thread.start();
-	 	md1.start();
+	 	//md1.start();
 	 	
 	}
 
